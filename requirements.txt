@@ -1,0 +1,8 @@
+altair==4.2.2
+selenium==4.8.0
+streamlit==1.17.0
+pandarallel==1.6.4
+pandas==1.5.3
+tqdm==4.64.1
+psutil
+gtts
