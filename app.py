@@ -17,7 +17,10 @@ with open("./data/app_metadata.json", "r") as f: metadata = json.load(f) # STart
 if ((time.time() - metadata["last_scrape_time"] > (metadata["auto_scrape_frequency_in_mins"] * 60)) and (not metadata["process_busy"])) or (st.session_state["first_start"]):
     
     st.session_state["first_start"] = False
+    # linux
     subprocess.Popen(["/home/shady/anaconda3/envs/py38/bin/python", "./script.py"]) # run script 
+    # windows
+    # subprocess.Popen(["python", "./script.py"]) # run script
 
 
 with open("./data/app_metadata.json","r") as f:st.session_state["last_scrape_time"] = metadata["last_scrape_time"]
