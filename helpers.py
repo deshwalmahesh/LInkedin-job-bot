@@ -18,7 +18,8 @@ from pandarallel import pandarallel
 
 pandarallel.initialize(nb_workers=cpu_count()-1)
 
-my_words = set({" ml ","machine learning", "nlp", " cv ", " dl " "deep learning", "artificial intelligence", " ai ", "data scien", "mlop", "neural network", "natural language", "computer vision", "recommendation",
+my_words = set({"genai", "generativeai", "gen ai", "gen-ai", "generative-ai","generative ai", "llm", "large language model", "gpt", 
+                " ml ","machine learning", "nlp", " cv ", " dl " "deep learning", "artificial intelligence", " ai ", "data scien", "mlop", "neural network", "natural language", "computer vision", "recommendation",
   "anomaly", "chat", "conversation", "image process", "manipulat", "analy"
  
  "regression", "classification", "cluste", "detect", "track", "segment", "generati", "diffusion", "encoder", "decoder", "supervise", "unsupervise", "shot", "enhancement", "digiti", "optical", 

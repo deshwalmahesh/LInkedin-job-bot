@@ -1,2 +1,5 @@
 *.csv
 *.log
+*.npy
+*.zip
+*.__pycache__/*

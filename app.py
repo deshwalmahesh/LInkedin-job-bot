@@ -18,7 +18,7 @@ if ((time.time() - metadata["last_scrape_time"] > (metadata["auto_scrape_frequen
     
     st.session_state["first_start"] = False
     # linux
-    subprocess.Popen(["/home/shady/anaconda3/envs/py38/bin/python", "./script.py"]) # run script 
+    subprocess.Popen(["python", "./script.py"]) # run script 
     # windows
     # subprocess.Popen(["python", "./script.py"]) # run script
 
